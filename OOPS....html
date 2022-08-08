@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>OOPS...</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      .tool-flex-center {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+	  }
+      .page-error-wrapper {
+          min-height: 100vh;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          overflow: hidden auto;
+          background: #2068b4;
+          color: white;
+          font-size: 1.5em;
+          z-index: 9999;
+          user-select: none;
+      }
+
+      .page-error-layer {
+          max-width: 1024px;
+          width: calc(100% - 12px);
+          padding: 12px 12px 36px;
+      }
+
+      .error-tip {
+        line-height: 40px;
+      }
+
+      .sad {
+          font-size: 5em;
+          margin-bottom: 12px;
+      }
+      .error-footer {
+          display: flex;
+      }
+      .error-qrcode {
+          width: 150px;
+          height: 150px;
+          margin-right: 16px;
+          background: url("/img/OOPS/1/stop_qrcode.png") center/contain no-repeat;
+          image-rendering: pixelated;
+      }
+      .error-contact {
+        font-size: 15px;
+        margin-top: -0.2em;
+        line-height: 25px;
+      }
+      .backtrace {
+          font-size: 1rem;
+          user-select: text;
+          overflow: auto;
+      }
+      .backtrace-trigger {
+          cursor: pointer;
+      }
+
+      @media screen and (max-width: 520px) {
+          .error-footer {
+              flex-direction: column;
+          }
+
+          .error-contact {
+              margin-top: 12px;
+          }
+      }
+	</style>
+</head>
+<body>
+<div class="page-error-wrapper tool-flex-center">
+	<div class="page-error-layer">
+		<div class="sad">
+			:(
+		</div>
+		<div class="error-tip">
+			My personal website suddenly has a new BUG,  and can't be 
+			<br>
+			showed. The problem may be temporary, so please try again 
+			<br>
+            or do it later.
+			<br>
+            <br>
+			100% complet
+			<br>
+			<br>
+		</div>
+		<div class="error-footer">
+			<div class="error-qrcode"></div>
+			<div class="error-contact">
+				For more information about this issue and possible, 
+                <br>
+                turn off your devices
+				<br>
+                <br>
+				If you call a support person, give them this info:
+                <br>
+				Error information: #$@!%
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body></html>
